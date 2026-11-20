@@ -1,0 +1,354 @@
+
+
+body{
+margin:0;
+font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navegador{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:white;
+border-bottom:1px solid #ddd;
+}
+
+/* Logo */
+.logo h2{
+margin:0;
+letter-spacing:3px;
+}
+
+/* Menú */
+.menu{
+display:flex;
+list-style:none;
+gap:40px;
+margin:0;
+padding:0;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-size:14px;
+font-weight:500;
+}
+
+.menu a:hover{
+color:#000;
+}
+
+/* Acciones */
+.acciones{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.login{
+text-decoration:none;
+border:1px solid #333;
+padding:8px 15px;
+border-radius:20px;
+font-size:13px;
+color:#333;
+}
+
+.login:hover{
+background:#333;
+color:white;
+}
+
+/* contenedor del dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* SUBMENU CON COLUMNAS */
+.submenu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+
+  background: white;
+  list-style: none;
+  padding: 20px;
+
+  /* COLUMNAS */
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 10px;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+
+  /* oculto por defecto */
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+/* mostrar submenu */
+.dropdown:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 23px;
+  top: 50px;
+}
+
+/* items del submenu */
+.submenu li {
+  padding: 6px;
+}
+
+/* links del submenu */
+.submenu li a {
+  display: block;
+  color: #333;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 300ms ease;
+}
+
+/* hover submenu */
+.submenu li a:hover {
+  background: blue;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+.presentacion{
+padding:60px;
+background:#f5f5f5;
+}
+
+.contenido{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.texto{
+width:50%;
+}
+
+.texto h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.texto p{
+font-size:16px;
+line-height:1.6;
+color:#555;
+}
+
+.texto button{
+margin-top:20px;
+padding:12px 25px;
+background:#000;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.texto button:hover{
+background:#444;
+}
+
+.imagen{
+width:50%;
+}
+
+.imagen img{
+width:100%;
+border-radius:10px;
+}
+
+.vehiculos{
+background:#111;
+color:white;
+padding:80px;
+}
+
+.texto-vehiculos{
+max-width:700px;
+margin-bottom:40px;
+}
+
+.texto-vehiculos h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.texto-vehiculos p{
+color:#ccc;
+line-height:1.6;
+}
+
+/* contenedor de autos */
+
+.contenedor-autos{
+display:flex;
+gap:30px;
+}
+
+/* tarjetas */
+
+.auto-card{
+position:relative;
+width:50%;
+}
+
+.auto-card img{
+width:100%;
+border-radius:20px;
+}
+
+/* botón */
+
+.auto-card button{
+position:absolute;
+bottom:20px;
+left:20px;
+padding:12px 20px;
+border:none;
+background:white;
+color:black;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.auto-card button:hover{
+background:#ddd;
+}
+
+.hero{
+height:90vh;
+background-image:url("Gemini_Generated_Image_3kl47p3kl47p3kl4.png");
+background-size:cover;
+background-position:center;
+position:relative;
+color:white;
+padding:80px;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+}
+
+/* sombreado para que el texto se vea */
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.contenido-hero{
+position:relative;
+max-width:500px;
+}
+
+.contenido-hero h1{
+font-size:48px;
+line-height:1.2;
+}
+
+.caracteristicas{
+position:relative;
+display:flex;
+gap:60px;
+margin-top:40px;
+}
+
+.caracteristicas h3{
+color:#f5b400;
+}
+
+.btn{
+position:absolute;
+right:40px;
+bottom:40px;
+padding:15px 30px;
+background:#f5b400;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#ffcc33;
+}
+.footer{
+background:#111;
+color:white;
+padding:60px 80px;
+}
+
+.footer-contenido{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+margin-bottom:40px;
+}
+
+.columna{
+width:18%;
+}
+
+.columna h3{
+font-size:14px;
+margin-bottom:15px;
+color:#fff;
+}
+
+.columna ul{
+list-style:none;
+padding:0;
+}
+
+.columna ul li{
+margin-bottom:8px;
+font-size:14px;
+color:#ccc;
+cursor:pointer;
+}
+
+.columna ul li:hover{
+color:white;
+}
+
+/* parte inferior */
+
+.footer-inferior{
+border-top:1px solid #333;
+padding-top:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.redes span{
+margin-left:15px;
+font-size:20px;
+cursor:pointer;
+}
+.copi_vehiculos{
+  text-decoration: none;
+  color: #ddd;
+}
+.parrafo_1{
+  font-size: 14px;
+
+}

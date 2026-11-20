@@ -1,0 +1,84 @@
+<head>
+<meta charset="UTF-8">
+<title>Preguntas Frecuentes</title>
+<link rel="stylesheet" href="preguntasfrecuentes.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Preguntas Frecuentes</h1>
+
+<button class="accordion">¿Qué es el desarrollo de una página web?</button>
+<div class="panel">
+<p>Es el proceso de crear y diseñar un sitio web utilizando tecnologías como HTML, CSS y JavaScript, con el objetivo de mostrar información o servicios en internet.</p>
+</div>
+
+<button class="accordion">¿Qué pasos seguimos para desarrollar una página web?</button>
+<div class="panel">
+<p> Los pasos principales son:
+  <ul>
+    <li>Planificación del proyecto</li>
+    <li>Diseño de la interfaz</li>
+    <li>Programación del sitio web</li>
+    <li>Pruebas y correcciones</li>
+    <li>Publicación en internet</li>
+  </ul>
+</p>
+</div>
+
+<button class="accordion">¿Qué lenguajes se utilizan para crear una página web?
+</button>
+<div class="panel">
+<p>Los más utilizados son:
+  <ul>
+    <li>HTML para la estructura</li>
+    <li>CSS para el diseño y estilos</li>
+    <li>JavaScript para la interactividad</li>
+  </ul>
+</p>
+</div>
+
+<button class="accordion"> ¿Cuánto tiempo toma desarrollar una página web?</button>
+<div class="panel">
+<p>Depende de la complejidad del proyecto. Un sitio web básico puede tardar entre 1 y 2 semanas, mientras que proyectos más grandes pueden tomar más tiempo.</p>
+</div>
+
+
+<button class="accordion"> ¿Por qué es importante tener una página web?</button>
+<div class="panel">
+<p>Porque permite mostrar información, promocionar productos o servicios y llegar a más personas a través de internet.</p>
+</div>
+
+<button class="accordion"> ¿Se puede actualizar una página web después de creada?</button>
+<div class="panel">
+<p>Sí. Las páginas web pueden actualizarse en cualquier momento para mejorar el diseño, agregar contenido o corregir errores.</p>
+</div>
+
+</div>
+
+<script >
+
+var acc = document.getElementsByClassName("accordion");
+
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+
+    var panel = this.nextElementSibling;
+
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+
+  });
+}
+
+</script>
+
+</body>
+</html>
